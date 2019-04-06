@@ -38,7 +38,23 @@ async function downloadFile(finish) {
   });
 }
 
+if (!process.env.LEANDOO_LOGIN) {
+  console.log("❌ missing environment: 'LEANDOO_LOGIN'");
+  return;
+}
+
+if (!process.env.LEANDOO_PASSWORD) {
+  console.log("❌ missing environment: 'LEANDOO_PASSWORD'");
+  return;
+}
+
+if (!process.env.SENDGRID_API_KEY) {
+  console.log("❌ missing environment: 'SENDGRID_API_KEY'");
+  return;
+}
+
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
 console.log("🚗 Downloading pdf file...");
 downloadFile(() => {
   console.log("📩 Finished! Now mailing it...");

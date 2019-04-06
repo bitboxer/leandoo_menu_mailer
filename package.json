@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Bodo Tasche <bodo@wannawork.de> (https://bitboxer.de)",
-  "license": "Blue Oak Model License 1.0.0",
   "dependencies": {
     "@sendgrid/mail": "^6.3.1",
     "luxon": "^1.12.1",
