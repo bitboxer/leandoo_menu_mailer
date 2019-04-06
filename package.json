@@ -1,0 +1,15 @@
+{
+  "name": "leandoo-mailer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Bodo Tasche <bodo@wannawork.de> (https://bitboxer.de)",
+  "license": "MIT",
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "luxon": "^1.12.1",
+    "puppeteer": "^1.14.0"
+  },
+  "scripts": {
+    "start": "node ./fetch_pdf.js"
+  }
+}
